@@ -7,7 +7,7 @@ const  app = express();
 app.set('views',path.join(__dirname, 'views'));
 app.engine('ejs',engine);
 app.set('view engine','ejs');
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 301);
 
 //rutas
 app.use('/', require('./routes/index'));
